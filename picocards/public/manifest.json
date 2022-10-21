@@ -28,8 +28,8 @@
     "simple"
   ],
   "serviceworker": {
-   "src": "sw.js",
-   "scope": "/",
+   "src": "/cardsnext/sw.js",
+   "scope": "/cardsnext/",
    "update_via_cache": "none"
  }
 }
