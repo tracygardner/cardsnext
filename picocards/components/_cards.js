@@ -84,7 +84,7 @@ export const CardHeader = (props) => {
         <section className="widest wrap">
           <img
             className="logo narrow"
-            src="../images/RPF.png"
+            src="images/RPF.png"
             alt="Raspberry Pi logo"
           />
           <div className="wide">
