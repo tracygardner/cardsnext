@@ -1,0 +1,19 @@
+/* Set up colour palette and fonts using variables */
+
+:root {
+  --primary: rgb(15, 174, 176); /* */
+  --onprimary: white; /* */
+  --secondary: white; /* */
+  --onsecondary: black; /* */
+  --tertiary: #1f1fff; /* */
+  --ontertiary: #ffffff; /* */
+  --page: #000000; /* */
+  --onpage: #ffffff; /* */
+  --detail: rgb(175, 8, 69); /* */
+  --detail2: #6cc04a; /* */
+
+  --body-font: lighter 1.2rem 'Roboto Flex', sans-serif;
+  --header-font: lighter 3rem 'Roboto Flex', sans-serif;
+  --title-font: lighter 2rem 'Roboto Flex', sans-serif;
+  --quote-font: lighter 1.5rem 'Roboto Flex', sans-serif;
+}

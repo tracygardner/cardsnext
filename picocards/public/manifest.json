@@ -1,0 +1,35 @@
+{
+  "name": "MyCards",
+  "display": "fullscreen",
+  "start_url": "/",
+  "scope": "/",
+  "short_name": "Pico Cards",
+  "theme_color": "#e30b5d",
+  "description": "Pico Maker Cards",
+  "orientation": "portrait",
+  "background_color": "#e30b5d",
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "images/icon_512.png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "images/maskable_icon.png",
+      "sizes": "640x640",
+      "type": "image/png",
+      "purpose": "maskable"     
+    }
+  ],
+  "features": [
+    "Cross Platform",
+    "fast",
+    "simple"
+  ],
+  "serviceworker": {
+   "src": "/sw.js",
+   "scope": "/",
+   "update_via_cache": "none"
+ }
+}
