@@ -9,8 +9,10 @@ export default function Home() {
       <Head>
         <title>Pico Maker Cards</title>
         <meta name="description" content="Maker Cards to help you get started with the Raspberry Pi Pico." />
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="manifest" href="/manifest.json" />
+        <link rel="icon" href="favicon.ico" />
+        <link rel="manifest" href="manifest.json" />
+         <link href="mc-style.css" rel="stylesheet" type="text/css" />
+         <link href="maker-card.css" rel="stylesheet" type="text/css" />
       </Head>
 
       <Header heading="Raspberry Pi Pico: Maker Cards" desc="Explore these maker cards to build your own creations with the Raspberry Pi Pico" />
