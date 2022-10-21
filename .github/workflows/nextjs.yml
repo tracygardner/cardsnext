@@ -5,9 +5,9 @@
 name: Deploy Next.js site to Pages
 
 defaults:
-  run:
-    working-directory: picocards
-
+ run:
+  working-directory: ./picocards
+  
 on:
   # Runs on pushes targeting the default branch
   push:
