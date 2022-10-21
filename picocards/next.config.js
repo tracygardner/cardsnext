@@ -12,9 +12,8 @@ module.exports = nextConfig
 const withPWA = require('next-pwa')({
   dest: 'public',
   register: true,
-  scope: '/cardsnext/',
-  sw: '/cardsnext/sw.js',
-  subdomainPrefix: '/cardsnext/',    
+  scope: '/',
+  sw: '/sw.js',    
 })
 
 module.exports = withPWA({
@@ -24,6 +23,7 @@ module.exports = withPWA({
   images: {
     unoptimized: true,
   },
+   basePath: '/cardsnext',
 })
 
 
