@@ -28,7 +28,7 @@
     "simple"
   ],
   "serviceworker": {
-   "src": "/sw.js",
+   "src": "sw.js",
    "scope": "/",
    "update_via_cache": "none"
  }
