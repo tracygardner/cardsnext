@@ -7,7 +7,7 @@
 export const Header = (props) => {
   return <header className="border-bottom secondary">
     <section className="wrap">
-      <img className="logo narrow" src="../images/RPF.png" alt="Raspberry Pi logo" />
+      <img className="logo narrow" src="images/RPF.png" alt="Raspberry Pi logo" />
       <h1>{props.heading}</h1>
       <p>{props.desc}</p>
     </section>
