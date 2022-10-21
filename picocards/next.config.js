@@ -13,7 +13,8 @@ const withPWA = require('next-pwa')({
   dest: 'public',
   register: true,
   scope: '/',
-  sw: 'sw.js'
+  sw: 'sw.js',
+  basePath: '/cardsnext'
 })
 
 module.exports = withPWA({
