@@ -1,0 +1,157 @@
+body {
+  /*width: 230mm;*/
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  /*font-size: 12pt;*/
+  background: rgb(204, 204, 204);
+}
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+
+
+.sub-page {
+  /*padding: 1cm; */
+  height: auto;
+}
+
+@page {
+  size: A4 landscape;
+  margin: 0;
+}
+
+@media print {
+  html,
+  body {
+    width: 297mm;
+    /*height: 210mm; */
+    height: auto;
+  }
+
+  .outer-page {
+   width: 297mm;
+  }
+
+  .main-page {
+    margin: 0 0;
+    border: initial;
+    border-radius: initial;
+    width: initial;
+    min-height: initial;
+    box-shadow: initial;
+    background: initial;
+    break-after: auto;
+    top: 4.95rem;
+    background: white;
+  }
+
+  .side {
+  height: 150mm;
+  margin: 1.8rem;
+  padding: 0.9rem;
+  }
+
+  /* Header and footer element styles */
+
+  header {
+    text-align: left;
+    padding-left: 2rem;
+    top: 0;
+  }
+
+  footer {
+    text-align: center;
+    bottom: 0rem;
+  }
+
+  header,
+  footer {
+    width: 100%; /* Fill the full width of the window */
+    margin: 0; /* Remove the default margin */
+    min-height: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    left: 0;
+    right: 0;
+  }
+
+  .download {
+    display: none;
+  }
+
+  .offline {
+    font-size: 1rem;
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+  }
+
+  .offline {
+    text-decoration: none;
+  }
+}
+
+@media screen {
+
+  .main-page {
+  width:  70.16rem;
+  background: white;
+}
+  
+  .outer-page {
+    width: 70.16rem;
+    min-height: auto;
+    margin: 10mm auto;
+    background: white;
+    box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+  }
+
+  .side {
+  height: 35.43rem;
+  margin: 1.8rem;
+  padding: 0.9rem;
+}
+
+  header {
+    text-align: left;
+    padding-left: 2rem;
+    top: 0;
+    position: relative;
+  }
+
+  footer {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  header,
+  footer {
+    width: 100%;
+    min-height: 3rem;
+    padding: 1rem;
+    margin: 0;
+  }
+
+  .download {
+    font-size: 1.2rem;
+    padding: 3px;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    right: 0.25rem;
+    top: 0.25rem;
+    border: 0.1rem solid white;
+    border-radius: 0.5rem;
+  }
+
+  .download::before {
+    content: "⬇";
+  }
+
+  .offline {
+    display: none;
+  }
+}

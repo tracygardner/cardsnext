@@ -1,4 +1,14 @@
+import Head from 'next/head'
+import Link from 'next/link'
 
+export const CardHead = (props) => {
+  return <Head>
+   <link href="print.css" rel="stylesheet" type="text/css" />
+  <link href="turquoise.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="prism.css" rel="stylesheet" type="text/css" />
+  </Head>
+};
 
 /*const Headline = (props) => {
   return <p><strong>{props.text}</strong> {props.text2}</p>
@@ -7,7 +17,7 @@
 export const Header = (props) => {
   return <header className="border-bottom secondary">
     <section className="wrap">
-      <img className="logo narrow" src="images/RPF.png" alt="Raspberry Pi logo" />
+      <img className="logo narrow" src="/images/RPF.png" alt="Raspberry Pi logo" />
       <h1>{props.heading}</h1>
       <p>{props.desc}</p>
     </section>
@@ -15,13 +25,13 @@ export const Header = (props) => {
 };
 
 export const CardMini = (props) => {
-  return <a href={props.href} target="_blank" rel="noreferrer">
+  return <Link href={props.href}>
     <div className="secondary tile rounded xcenter">
       <img className="rounded" style={{ height: "9rem", width: "11rem" }} src={props.src} alt={props.alt} />
       <br />
       {props.title}
     </div>
-  </a>
+  </Link>
 };
 
 export const CardMinis = (props) => {
@@ -36,6 +46,7 @@ export const CardsSection = (props) => {
       {props.icon}
     </span></h2>
   </section>
+  
 };
 
 export const CardIndex = (props) => {

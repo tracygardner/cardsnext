@@ -15,13 +15,13 @@ export default function Home() {
          <link href="maker-card.css" rel="stylesheet" type="text/css" />
       </Head>
 
-      <Header heading="Raspberry Pi Pico: Maker Cards" desc="Explore these maker cards to build your own creations with the Raspberry Pi Pico" />
+      <Header heading="Raspberry Pi Pico: Maker Cards 2" desc="Explore these maker cards to build your own creations with the Raspberry Pi Pico" />
       <CardIndex>
 
           <CardsSection title="Set up your Pico" icon="construction" />
           <CardMinis>
-            <CardMini href="pico-setup.html" title="Set up your Pico" src="images/pico-top-plug.png" alt="The onboard LED is on." />
-            <CardMini href="pico-test.html" title="Test your Pico" src="images/led-on.png" alt="The onboard LED is on." />
+            <CardMini href="/pico-setup" title="Set up your Pico" src="images/pico-top-plug.png" alt="The onboard LED is on." />
+            <CardMini href="/pico-test" title="Test your Pico" src="images/led-on.png" alt="The onboard LED is on." />
           </CardMinis>
 
           <CardsSection title="Things to make" icon="tips_and_updates" />

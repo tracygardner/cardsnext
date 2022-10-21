@@ -1,0 +1,20 @@
+/* Set up colour palette and fonts using variables */
+
+:root {
+  --primary: 15, 174, 176;
+  --onprimary: 255, 255, 255;
+  --secondary: 255, 255, 255;
+  --onsecondary: 0, 0, 0;
+  --tertiary: 116, 116, 116;
+  --ontertiary: 255, 255, 255;
+  --page: 255, 255, 255;
+  --onpage: 0, 0, 0;
+  --detail: 15, 174, 176;
+  --detail2: 0, 0, 0;
+
+  --body-font: 1rem 'Rubik', sans-serif;
+  --header-font: bolder 3rem 'Rubik', sans-serif;
+  --title-font: bolder 2.5rem 'Rubik', sans-serif;
+  --quote-font: lighter 1.5rem 'Rubik', sans-serif;
+  --highlight-font: bolder 1rem 'Rubik', sans-serif;
+}
