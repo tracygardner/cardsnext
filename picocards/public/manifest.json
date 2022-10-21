@@ -1,8 +1,8 @@
 {
   "name": "Raspberry Pi Pico Maker Cards",
   "display": "fullscreen",
-  "start_url": "/cardsnext/",
-  "scope": "/cardsnext/",
+  "start_url": ".",
+  "scope": ".",
   "short_name": "Pico Cards",
   "theme_color": "#e30b5d",
   "description": "Pico Maker Cards",
