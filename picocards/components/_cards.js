@@ -3,15 +3,14 @@ import Link from 'next/link'
 import Image from 'next/future/image'
 import { useEffect } from 'react'
 import logo from '../public/images/RPF.png'
+import Prism from 'prismjs';
+import pythonPrism from 'prismjs/components/prism-python'
 
 export const CardHead = (props) => {
   return <Head>
    <link href="/cardsnext/print.css" rel="stylesheet" type="text/css" />
   <link href="/cardsnext/turquoise.css" rel="stylesheet" type="text/css" />
   <link href="/cardsnext/style.css" rel="stylesheet" type="text/css" />
-  <link href="/cardsnext/prism.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/prism.min.js" integrity="sha512-RDQSW3KoqJMiX0L/UBgwBmH1EmRYp8LBOiLaA8rBHIy+7OGP/7Gxg8vbt8wG4ZYd29P0Fnoq6+LOytCqx3cyoQ==" crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/components/prism-python.min.js" integrity="sha512-AKaNmg8COK0zEbjTdMHJAPJ0z6VeNqvRvH4/d5M4sHJbQQUToMBtodq4HaV4fa+WV2UTfoperElm66c9/8cKmQ==" crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
   </Head>
 };
 
@@ -115,8 +114,9 @@ export const CardSide = (props) => {
 export const PythonSection = (props) => {
    useEffect(() => {
       Prism.highlightAll();
+     console.log("highlighting")
     }, []);
-  
+ 
   return <section className="code">
     <br />
     <h3>
@@ -136,7 +136,7 @@ export const PythonSection = (props) => {
             play_circle
           </span>
           <span className="material-symbols-outlined code-icons">
-            stop_circle
+            stop_circle    
           </span>
         </div>
 
@@ -146,6 +146,7 @@ export const PythonSection = (props) => {
               style={{ margin: "0rem" }}
             ><code className="lang-python rounded" style={{ margin: "0rem", padding: "0rem" }}>{props.children}</code></pre>
           </div>
+         
         </div>
       </div>
     </div>
