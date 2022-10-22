@@ -25,8 +25,8 @@ module.exports = withPWA({
     {
         source: '/cardsnext',
         destination: '/cardsnext/',
-        permanent: false
-},
+        permanent: true
+    },
     ]
   },
   swcMinify: true,
