@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/future/image'
 import { useEffect } from 'react'
+import logo from '../public/images/RPF.png'
 
 export const CardHead = (props) => {
   return <Head>
@@ -17,10 +19,15 @@ export const CardHead = (props) => {
   return <p><strong>{props.text}</strong> {props.text2}</p>
 };*/
 
+
+export const Logo = (props) => {
+  return  <Image className="logo narrow" src={logo} alt="Raspberry Pi logo" />
+};
+
 export const Header = (props) => {
   return <header className="border-bottom secondary">
     <section className="wrap">
-      <img className="logo narrow" src="/cardsnext/images/RPF.png" alt="Raspberry Pi logo" />
+      <Logo/>
       <h1>{props.heading}</h1>
       <p>{props.desc}</p>
     </section>
@@ -72,11 +79,7 @@ export const CardHeader = (props) => {
       <div className="column">
 
         <section className="widest wrap">
-          <img
-            className="logo narrow"
-            src="/cardsnext/images/RPF.png"
-            alt="Raspberry Pi logo"
-          />
+         <Logo/>
           <div className="wide">
             <h2>{props.head1}</h2>
           </div>
@@ -85,11 +88,7 @@ export const CardHeader = (props) => {
       <div className="column">
 
         <section className="widest wrap">
-          <img
-            className="logo narrow"
-            src="images/RPF.png"
-            alt="Raspberry Pi logo"
-          />
+          <Logo/>
           <div className="wide">
             <h2>{props.head2}</h2>
           </div>
