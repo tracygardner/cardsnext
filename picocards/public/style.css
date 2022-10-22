@@ -507,7 +507,7 @@ cite {
 
 /* To make a debug window */
 
-.debug-container {
+.debug-container, .instructions-container {
   background: rgba(var(--primary), 1);
   border: 3px solid rgba(var(--primary), 1);
   border-top-left-radius: 4px;
@@ -516,14 +516,14 @@ cite {
   /*box-shadow: 6px 6px 8px 2px #888888; /* right and bottom shadow, blur, spread and colour */
 }
 
-.debug-top {
+.debug-top, .instructions-top {
   padding: 0.3rem;
   background: rgba(var(--primary), 1);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
 
-.debug-content {
+.debug-content, .instructions-content {
   padding: 0.3rem;
   background: white;
 }

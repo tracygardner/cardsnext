@@ -11,10 +11,10 @@
   --onpage: 0, 0, 0;
   --detail: 15, 174, 176;
   --detail2: 0, 0, 0;
-
-  --body-font: 1rem 'Rubik', sans-serif;
-  --header-font: bolder 3rem 'Rubik', sans-serif;
-  --title-font: bolder 2.5rem 'Rubik', sans-serif;
-  --quote-font: lighter 1.5rem 'Rubik', sans-serif;
-  --highlight-font: bolder 1rem 'Rubik', sans-serif;
+c
+  --body-font: lighter 1.2rem 'Roboto Flex', sans-serif;
+  --header-font: lighter 3rem 'Roboto Flex', sans-serif;
+  --title-font: lighter 2rem 'Roboto Flex', sans-serif;
+  --quote-font: lighter 1.5rem 'Roboto Flex', sans-serif;
+  --highlight-font: bolder 1rem 'Roboto Flex', sans-serif;
 }

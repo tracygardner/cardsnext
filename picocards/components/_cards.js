@@ -152,6 +152,12 @@ export const PythonSection = (props) => {
   </section>
 };
 
+export const DebugFull = (props) => {
+  return <div className="debug-container">
+    {props.children}
+  </div>
+};
+
 export const Debug = (props) => {
   return <div className="debug-container sidebyside">
     {props.children}
@@ -174,6 +180,38 @@ export const DebugTitle = (props) => {
 
 export const DebugContent = (props) => {
   return <div className="debug-content">
+    {props.children}
+  </div>
+};
+
+export const InstructionsFull = (props) => {
+  return <div className="instructions-container">
+    {props.children}
+  </div>
+};
+
+export const Instructions = (props) => {
+  return <div className="instructions-container sidebyside">
+    {props.children}
+  </div>
+};
+
+export const InstructionsTitle = (props) => {
+  return <div className="instructions-top">
+    <p>
+      <span
+        className="material-symbols-outlined"
+        style={{ color: "white" }}
+      >
+        construction
+      </span>
+      <strong>{props.children}</strong>
+    </p>
+  </div>
+};
+
+export const InstructionsContent = (props) => {
+  return <div className="instructions-content">
     {props.children}
   </div>
 };

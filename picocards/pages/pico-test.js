@@ -1,8 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import {CardHead, CardHeader, CardMain, CardPage, CardSide, PythonSection, Debug, DebugContent, DebugTitle, CardFooter} from '../components/_cards';
-//import Prism from 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js'
-//import python from 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js'
 
 export default function Card() {
 
@@ -86,4 +84,4 @@ pico_led.off()`}</PythonSection>
     );
   }
 
-  //Prism.highlightAll();
+  
