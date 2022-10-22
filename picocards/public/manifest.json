@@ -1,6 +1,6 @@
 {
   "name": "Raspberry Pi Pico Maker Cards",
-  "display": "minimal-ui",
+  "display": "standalone",
   "start_url": "/cardsnext/",
   "scope": "/cardsnext/",
   "short_name": "Pico Cards",
