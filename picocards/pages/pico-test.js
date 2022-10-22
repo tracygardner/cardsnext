@@ -8,17 +8,17 @@ export default function Card() {
       <div>
       <CardHead/>
       <CardPage>
-        <CardHeader head1="Test your Raspberry Pi Pico" head2="Test your Raspberry Pi Pico" />
-
+       
         <CardMain>
 
-          <CardSide>
-
-            <section className="narrow">
+          <CardHeader head="Test your Raspberry Pi Pico"/>
+          
+          <CardSide>          
+            <section>
               <h3>
                 Switch the on board LED on and off
               </h3>
-
+<br/>
               <div className="xcenter">
                 <img
                   className="rounded photo-right"
@@ -35,8 +35,16 @@ export default function Card() {
             </section>
 
           </CardSide>
-
+           <CardFooter />
+          </CardMain>
+          <CardMain>
+          <CardHeader head="Test your Raspberry Pi Pico" />
           <CardSide>
+            <section>
+              <h3>
+                Run code in Thonny
+              </h3></section>
+<br/>       
             <PythonSection>{`from picozero import pico_led
 from time import sleep
 
@@ -76,9 +84,10 @@ pico_led.off()`}</PythonSection>
             </section>
           </CardSide>
 
+           <CardFooter />
         </CardMain>
 
-        <CardFooter />
+       
       </CardPage>
         </div>
     );

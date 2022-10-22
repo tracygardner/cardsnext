@@ -76,20 +76,10 @@ export const CardHeader = (props) => {
   return <header className="primary wrap">
     <div className="full row ycenter">
       <div className="column">
-
         <section className="widest wrap">
          <Logo/>
           <div className="wide">
-            <h2>{props.head1}</h2>
-          </div>
-        </section>
-      </div>
-      <div className="column">
-
-        <section className="widest wrap">
-          <Logo/>
-          <div className="wide">
-            <h2>{props.head2}</h2>
+            <h2>{props.head}</h2>
           </div>
         </section>
       </div>
@@ -99,14 +89,14 @@ export const CardHeader = (props) => {
 
 export const CardMain = (props) => {
   return <main className="page main-page">
-    <div className="row ycenter">
+    <div className="column ycenter xcenter">
       {props.children}
     </div>
   </main>
 };
 
 export const CardSide = (props) => {
-  return <div className="column side solid-border rounded ycenter">
+  return <div className="column side solid-border rounded xcenter">
     {props.children}
   </div>
 };
@@ -117,14 +107,6 @@ export const PythonSection = (props) => {
     }, []);
  
   return <section className="code">
-    <br />
-    <h3>
-      <span className="material-symbols-outlined">
-        sort
-      </span>
-      Code
-    </h3>
-    <br />
     <div className="wrap">
       <div className="code-container">
         <div className="code-top">
@@ -233,19 +215,6 @@ export const CardFooter = (props) => {
             <strong
             ><a href="https://rpf.io/pico-intro"
             >rpf.io/pico-intro</a
-              ></strong
-            >
-          </div>
-        </section>
-      </div>
-      <div className="column">
-
-        <section>
-          <div className="wider">
-            Use your Raspberry Pi Pico with:
-            <br /><strong
-            ><a href="https://rpf.io/led-firefly"
-            >rpf.io/led-firefly</a
               ></strong
             >
           </div>

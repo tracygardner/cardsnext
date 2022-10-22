@@ -6,16 +6,10 @@ body {
   /*font-size: 12pt;*/
   background: rgb(204, 204, 204);
 }
+
 * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
-}
-
-
-
-.sub-page {
-  /*padding: 1cm; */
-  height: auto;
 }
 
 @page {
@@ -27,24 +21,24 @@ body {
   html,
   body {
     width: 297mm;
-    /*height: 210mm; */
-    height: auto;
+    height: 210mm; 
   }
 
   .outer-page {
    width: 297mm;
+    height: 210mm; 
   }
 
   .main-page {
     margin: 0 0;
     border: initial;
     border-radius: initial;
-    width: initial;
-    min-height: initial;
+    width: 148.5mm;
+    height: 210mm;
     box-shadow: initial;
     background: initial;
     break-after: auto;
-    top: 4.95rem;
+    top: 4.95re
     background: white;
   }
 
@@ -95,20 +89,11 @@ body {
 }
 
 @media screen {
-
   .main-page {
-  width:  70.16rem;
+  width:  35.08rem;
+  height: 49.77rem;
   background: white;
 }
-  
-  .outer-page {
-    width: 70.16rem;
-    min-height: auto;
-    margin: 10mm auto;
-    background: white;
-    box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
-  }
-
   .side {
   height: 35.43rem;
   margin: 1.8rem;
@@ -155,3 +140,23 @@ body {
     display: none;
   }
 }
+
+@media screen and (min-width: 35.08rem) {
+  .outer-page {
+    width: 70.16rem;
+    height: 49.77rem;
+    margin: 10mm auto;
+    background: white;
+    box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+
+   .outer-page {
+  width:  35.08rem;
+  height: 49.77rem;
+  background: white;
+}
+}  
+  

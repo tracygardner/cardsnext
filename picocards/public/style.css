@@ -32,6 +32,25 @@
   color: rgba(var(--onpage), 1);
 }
 
+.main-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sub-page {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  gap:0rem 0rem;
+  row-gap: 0rem;
+  column-gap: 0rem;
+}
+
+
 .banner {
   background: rgba(var(--detail), 1);
   color: rgba(var(--onpage), 1);

@@ -9,11 +9,12 @@ export default function Card() {
       <div>
       <CardHead/>
       <CardPage>
-        <CardHeader head1="Plug in your Raspberry Pi Pico" head2="Install picozero" />
-
+        
         <CardMain>
 
           <CardSide>
+
+            <CardHeader head="Plug in your Raspberry Pi Pico"/>
 
             <section className="narrow">
               <h3>
@@ -63,7 +64,10 @@ export default function Card() {
           </CardSide>
 
           <CardSide>
-             <section className="narrow">
+
+            <CardHeader head="Install picozero" />
+            
+            <section className="narrow">
                 <br />
                 <h3>
                   Install the picozero library
