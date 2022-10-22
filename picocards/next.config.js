@@ -13,12 +13,22 @@ const withPWA = require('next-pwa')({
   dest: 'public',
   register: true,
   scope: '/cardsnext/',
-  sw: '/sw.js',    
+  sw: '/sw.js',   
+  disable: process.env.NODE_ENV === 'development'
 })
 
 module.exports = withPWA({
   // next.js config
   reactStrictMode: true,
+  async redirects() {
+    return [
+    {
+        source: '/cardsnext',
+        destination: '/cardsnext/',
+        permanent: false
+},
+    ]
+  },
   swcMinify: true,
   images: {
     unoptimized: true,

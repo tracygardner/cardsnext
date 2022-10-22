@@ -1,12 +1,14 @@
 import Head from 'next/head'
 import Link from 'next/link'
+//import { render } from "react-dom";
+//import Highlight, { defaultProps } from "prism-react-renderer";
 
 export const CardHead = (props) => {
   return <Head>
-   <link href="print.css" rel="stylesheet" type="text/css" />
-  <link href="turquoise.css" rel="stylesheet" type="text/css" />
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link href="prism.css" rel="stylesheet" type="text/css" />
+   <link href="/cardsnext/print.css" rel="stylesheet" type="text/css" />
+  <link href="/cardsnext/turquoise.css" rel="stylesheet" type="text/css" />
+  <link href="/cardsnext/style.css" rel="stylesheet" type="text/css" />
+  <link href="/cardsnext/prism.css" rel="stylesheet" type="text/css" />
   </Head>
 };
 
@@ -17,7 +19,7 @@ export const CardHead = (props) => {
 export const Header = (props) => {
   return <header className="border-bottom secondary">
     <section className="wrap">
-      <img className="logo narrow" src="images/RPF.png" alt="Raspberry Pi logo" />
+      <img className="logo narrow" src="/cardsnext/images/RPF.png" alt="Raspberry Pi logo" />
       <h1>{props.heading}</h1>
       <p>{props.desc}</p>
     </section>
@@ -71,7 +73,7 @@ export const CardHeader = (props) => {
         <section className="widest wrap">
           <img
             className="logo narrow"
-            src="images/RPF.png"
+            src="/cardsnext/images/RPF.png"
             alt="Raspberry Pi logo"
           />
           <div className="wide">
