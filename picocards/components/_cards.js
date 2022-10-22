@@ -114,7 +114,6 @@ export const CardSide = (props) => {
 export const PythonSection = (props) => {
    useEffect(() => {
       Prism.highlightAll();
-     console.log("highlighting")
     }, []);
  
   return <section className="code">
